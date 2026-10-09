@@ -1,0 +1,136 @@
+{
+  "DESIGN_NAME": "jev_mesh_2x2",
+  "VERILOG_FILES": [
+    "dir::src/jev_mesh_2x2.v"
+  ],
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 25,
+  "RUN_POST_GRT_RESIZER_TIMING": true,
+  "RUN_POST_GRT_DESIGN_REPAIR": true,
+  "EXTRA_EXCLUDED_CELLS": [
+    "sky130_fd_sc_hd__clkdlybuf4s*"
+  ],
+  "DESIGN_REPAIR_MAX_SLEW_PCT": 40,
+  "GRT_DESIGN_REPAIR_MAX_SLEW_PCT": 40,
+  "DESIGN_REPAIR_MAX_CAP_PCT": 25,
+  "GRT_DESIGN_REPAIR_MAX_CAP_PCT": 20,
+  "CTS_SINK_CLUSTERING_SIZE": 10,
+  "TIMING_VIOLATION_CORNERS": [
+    "*"
+  ],
+  "MAX_SLEW_VIOLATION_CORNERS": [
+    "*"
+  ],
+  "MAX_CAP_VIOLATION_CORNERS": [
+    "*"
+  ],
+  "PNR_CORNERS": [
+    "max_ss_100C_1v60"
+  ],
+  "RSZ_CORNERS": [
+    "max_ss_100C_1v60",
+    "min_ff_n40C_1v95"
+  ],
+  "DESIGN_REPAIR_MAX_WIRE_LENGTH": 100,
+  "GRT_DESIGN_REPAIR_MAX_WIRE_LENGTH": 100,
+  "FP_SIZING": "absolute",
+  "DIE_AREA": [
+    0,
+    0,
+    959,
+    985
+  ],
+  "MACROS": {
+    "jev_dot_pipe": {
+      "gds": [
+        "dir::macro/jev_dot_pipe.gds"
+      ],
+      "lef": [
+        "dir::macro/jev_dot_pipe.lef"
+      ],
+      "nl": [
+        "dir::macro/jev_dot_pipe.nl.v"
+      ],
+      "pnl": [
+        "dir::macro/jev_dot_pipe.pnl.v"
+      ],
+      "lib": {
+        "max_ff_n40C_1v95": [
+          "dir::macro/jev_dot_pipe__max_ff_n40C_1v95.lib"
+        ],
+        "max_ss_100C_1v60": [
+          "dir::macro/jev_dot_pipe__max_ss_100C_1v60.lib"
+        ],
+        "max_tt_025C_1v80": [
+          "dir::macro/jev_dot_pipe__max_tt_025C_1v80.lib"
+        ],
+        "min_ff_n40C_1v95": [
+          "dir::macro/jev_dot_pipe__min_ff_n40C_1v95.lib"
+        ],
+        "min_ss_100C_1v60": [
+          "dir::macro/jev_dot_pipe__min_ss_100C_1v60.lib"
+        ],
+        "min_tt_025C_1v80": [
+          "dir::macro/jev_dot_pipe__min_tt_025C_1v80.lib"
+        ],
+        "nom_ff_n40C_1v95": [
+          "dir::macro/jev_dot_pipe__nom_ff_n40C_1v95.lib"
+        ],
+        "nom_ss_100C_1v60": [
+          "dir::macro/jev_dot_pipe__nom_ss_100C_1v60.lib"
+        ],
+        "nom_tt_025C_1v80": [
+          "dir::macro/jev_dot_pipe__nom_tt_025C_1v80.lib"
+        ]
+      },
+      "spef": {
+        "max_*": [
+          "dir::macro/jev_dot_pipe.max.spef"
+        ],
+        "min_*": [
+          "dir::macro/jev_dot_pipe.min.spef"
+        ],
+        "nom_*": [
+          "dir::macro/jev_dot_pipe.nom.spef"
+        ]
+      },
+      "vh": [
+        "dir::macro/jev_dot_pipe.vh"
+      ],
+      "instances": {
+        "e0_0": {
+          "location": [
+            59.8,
+            592.96
+          ],
+          "orientation": "N"
+        },
+        "e0_1": {
+          "location": [
+            579.6,
+            592.96
+          ],
+          "orientation": "FN"
+        },
+        "e1_0": {
+          "location": [
+            59.8,
+            59.84
+          ],
+          "orientation": "FS"
+        },
+        "e1_1": {
+          "location": [
+            579.6,
+            59.84
+          ],
+          "orientation": "S"
+        }
+      }
+    }
+  },
+  "PL_TARGET_DENSITY_PCT": 45,
+  "IO_PIN_ORDER_CFG": "dir::pins.cfg",
+  "ERRORS_ON_UNMATCHED_IO": "both",
+  "SYNTH_CLK_DRIVING_CELL": "sky130_fd_sc_hd__clkbuf_8/X"
+}

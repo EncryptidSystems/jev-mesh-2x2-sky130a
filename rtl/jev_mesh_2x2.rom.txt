@@ -1,0 +1,110 @@
+Jev microcode ROM `jev_route`: controller state -> Jev's answer -> select code (LSB first: rom_21 rom_22)
+  state  answer        p      code
+  0      stage         1.000  00
+  1      load          1.000  01
+  2      reset         1.000  11
+  3      pass          1.000  10
+  4      stage         1.000  00
+  5      pass          1.000  10
+  6      reset         1.000  11
+  7      pass          1.000  10
+Jev microcode ROM `e0_0_route_x`: controller state -> Jev's answer -> select code (LSB first: rom_82 rom_83)
+  state  answer        p      code
+  0      x0            1.000  00
+  1      x1            1.000  01
+  2      x2            1.000  10
+  3      x3            1.000  11
+Jev microcode ROM `e0_0_route_w`: controller state -> Jev's answer -> select code (LSB first: rom_84 rom_85)
+  state  answer        p      code
+  0      w0            1.000  00
+  1      w1            1.000  01
+  2      w2            1.000  10
+  3      w3            1.000  11
+Jev microcode ROM `e0_0_mac_op`: controller state -> Jev's answer -> select code (LSB first: rom_86)
+  state  answer        p      code
+  0      mac           1.000  1
+  1      mac           1.000  1
+  2      mac           1.000  1
+  3      mac           1.000  1
+Jev microcode ROM `e0_1_route_x`: controller state -> Jev's answer -> select code (LSB first: rom_155 rom_156)
+  state  answer        p      code
+  0      x0            1.000  00
+  1      x1            1.000  01
+  2      x2            1.000  10
+  3      x3            1.000  11
+Jev microcode ROM `e0_1_route_w`: controller state -> Jev's answer -> select code (LSB first: rom_157 rom_158)
+  state  answer        p      code
+  0      w0            1.000  00
+  1      w1            1.000  01
+  2      w2            1.000  10
+  3      w3            1.000  11
+Jev microcode ROM `e0_1_mac_op`: controller state -> Jev's answer -> select code (LSB first: rom_159)
+  state  answer        p      code
+  0      mac           1.000  1
+  1      mac           1.000  1
+  2      mac           1.000  1
+  3      mac           1.000  1
+Jev microcode ROM `e1_0_route_x`: controller state -> Jev's answer -> select code (LSB first: rom_228 rom_229)
+  state  answer        p      code
+  0      x0            1.000  00
+  1      x1            1.000  01
+  2      x2            1.000  10
+  3      x3            1.000  11
+Jev microcode ROM `e1_0_route_w`: controller state -> Jev's answer -> select code (LSB first: rom_230 rom_231)
+  state  answer        p      code
+  0      w0            1.000  00
+  1      w1            1.000  01
+  2      w2            1.000  10
+  3      w3            1.000  11
+Jev microcode ROM `e1_0_mac_op`: controller state -> Jev's answer -> select code (LSB first: rom_232)
+  state  answer        p      code
+  0      mac           1.000  1
+  1      mac           1.000  1
+  2      mac           1.000  1
+  3      mac           1.000  1
+Jev microcode ROM `e1_1_route_x`: controller state -> Jev's answer -> select code (LSB first: rom_301 rom_302)
+  state  answer        p      code
+  0      x0            1.000  00
+  1      x1            1.000  01
+  2      x2            1.000  10
+  3      x3            1.000  11
+Jev microcode ROM `e1_1_route_w`: controller state -> Jev's answer -> select code (LSB first: rom_303 rom_304)
+  state  answer        p      code
+  0      w0            1.000  00
+  1      w1            1.000  01
+  2      w2            1.000  10
+  3      w3            1.000  11
+Jev microcode ROM `e1_1_mac_op`: controller state -> Jev's answer -> select code (LSB first: rom_305)
+  state  answer        p      code
+  0      mac           1.000  1
+  1      mac           1.000  1
+  2      mac           1.000  1
+  3      mac           1.000  1
+Jev microcode ROM `jev_accept`: controller state -> Jev's answer -> select code (LSB first: rom_361)
+  state  answer        p      code
+  0      stall         1.000  0
+  1      take          1.000  1
+  2      stall         1.000  0
+  3      stall         1.000  0
+  4      stall         1.000  0
+  5      take          1.000  1
+  6      take          1.000  1
+  7      take          1.000  1
+  8      stall         1.000  0
+  9      take          1.000  1
+  10     stall         1.000  0
+  11     stall         1.000  0
+  12     take          1.000  1
+  13     take          1.000  1
+  14     take          1.000  1
+  15     take          1.000  1
+Jev microcode ROM `jev_join`: controller state -> Jev's answer -> select code (LSB first: rom_551)
+  state  answer        p      code
+  0      hold          1.000  0
+  1      hold          1.000  0
+  2      hold          1.000  0
+  3      hold          1.000  0
+  4      hold          1.000  0
+  5      hold          1.000  0
+  6      hold          1.000  0
+  7      emit          1.000  1
